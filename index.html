@@ -5,14 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Prosanto Kumar Barman — I’m a CSE student passionate about robotics, machine learning, and building impactful tech solutions." />
+    content="Prosanto Kumar Barman — Robotics engineer and CSE student at DUET. Building intelligent physical systems with embedded hardware, AI, and full-stack software." />
   <meta name="author" content="Prosanto Kumar Barman" />
   <meta property="og:title" content="Prosanto Kumar Barman" />
-  <meta property="og:description"
-    content="I’m a CSE student passionate about robotics, machine learning, and building impactful tech solutions.." />
+  <meta property="og:description" content="Robotics engineer · AI/ML · Embedded Systems · CSE @ DUET" />
   <meta property="og:url" content="https://prosantokb.github.io" />
   <title>Prosanto Kumar Barman</title>
-  <link rel="icon" type="image/svg+xml" href="assets/images/bd.jpg" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/k-icon-small.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -24,12 +23,12 @@
 <body>
 
   <!-- ============================================================
-       NAVBAR
+       NAVBAR — About | Projects | Skills | Achievements | Contact
   ============================================================ -->
   <nav class="nav" id="navbar">
     <a href="#home" class="nav-logo">
       <span class="nav-logo-dot"></span>
-      <span class="nav-logo-text">PKB<span class="nav-logo-accent">.dev</span></span>
+      <span class="nav-logo-text">K<span class="nav-logo-accent">.dev</span></span>
     </a>
 
     <ul class="nav-links" id="nav-links">
@@ -37,12 +36,10 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <a href="Prosanto_Kumar_Barman_CV.pdf" download="Prosanto_Kumar_Barman_CV.pdf" class="nav-cta">Download Resume</a>
+    <a href="Prosanto_Kumar_Barman_CV.pdf" download="Prosanto_Kumar_Barman_CV.pdf" class="nav-cta">Download CV</a>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -55,7 +52,6 @@
   ============================================================ -->
   <section class="hero" id="home">
 
-    <!-- Circuit board SVG background -->
     <div class="hero-circuit" aria-hidden="true">
       <svg width="100%" height="100%" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" fill="none">
         <path d="M0 120 L200 120 L220 140 L500 140" stroke="#34d399" stroke-width="0.8" stroke-dasharray="4 8"
@@ -96,15 +92,8 @@
       </svg>
     </div>
 
-    <!-- Animated dot canvas — right side only (controlled in JS) -->
     <canvas class="hero-dots" id="hero-dots" aria-hidden="true"></canvas>
 
-    <!-- Hero background image overlay -->
-    <!--
-    <div class="hero-bg-image" id="hero-bg" style="background-image: url('assets/images/hero-bg.jpg')"></div>
-    -->
-
-    <!-- Dual-node drifting ambient glow -->
     <div class="hero-glow" aria-hidden="true">
       <div class="glow-orb glow-orb-1"></div>
       <div class="glow-orb glow-orb-2"></div>
@@ -112,41 +101,49 @@
 
     <div class="hero-inner">
 
-      <!-- Currently building badge -->
       <div class="hero-building-badge">
         <span class="building-dot"></span>
         Currently building: <span class="building-highlight">ASD Health Monitoring System</span>
       </div>
 
-      <!-- Main badge -->
       <div class="hero-badge">
         <span class="hero-badge-dot"></span>
         CSE @ DUET &nbsp;·&nbsp; Software Lead, DUET Robotics Club 25–26
       </div>
 
-      <!-- Name -->
       <h1 class="hero-name">
         Prosanto
-        <span class="hero-name-outline">Kumar Barman</span>
+
+        <span class="hero-name-outline">K.</span>
+
+        <span class="hero-name-outline">Barman</span>
+
       </h1>
 
-      <!-- Rotating typed sentences -->
       <p class="hero-tagline">
         <span class="typed-line">
           <span id="typed-text"></span><span class="typed-cursor">▋</span>
         </span>
         <span class="hero-tagline-sub">
           3rd-year CSE · DUET · building toward a
-          <span class="text-accent">robotics and AI startup</span>
+          <span class="text-accent">Robotics and AI startup</span>
         </span>
       </p>
 
-      <!-- CTA Buttons -->
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">
           View my work
           <svg class="btn-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <!-- CV button: hidden on desktop (nav has it), visible only on mobile -->
+        <a href="Prosanto_Kumar_Barman_CV.pdf" download="Prosanto_Kumar_Barman_CV.pdf"
+          class="btn btn-ghost hero-cv-btn">
+          Download CV
+          <svg class="btn-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M7 12V2M2 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
               stroke-linejoin="round" />
           </svg>
         </a>
@@ -167,17 +164,16 @@
         </a>
       </div>
 
-      <!-- Stats -->
+      <!-- Stats — GPA removed, Projects Built added, CF/LC auto-fetched -->
       <div class="hero-stats">
         <div class="stat">
-
-          <span class="stat-num" data-target="285">0</span>
-          <span class="stat-label">Problems solved at Codeforces</span>
+          <span class="stat-num" id="cf-count">285+</span>
+          <span class="stat-label">Problems · Codeforces</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-num" data-target="270">0</span>
-          <span class="stat-label">Problems solved at Codechef</span>
+          <span class="stat-num" id="cc-count">270+</span>
+          <span class="stat-label">Problems · CodeChef</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
@@ -186,8 +182,8 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-num">3.31</span>
-          <span class="stat-label">GPA / 4.00</span>
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Systems Built</span>
         </div>
       </div>
     </div>
@@ -200,7 +196,7 @@
 
 
   <!-- ============================================================
-       ABOUT
+       ABOUT — shortened, technical, confident
   ============================================================ -->
   <section class="section section-alt" id="about">
     <div class="section-inner">
@@ -210,39 +206,35 @@
         <div class="about-photo-col reveal">
           <img src="assets/images/photo.png" alt="Prosanto Kumar Barman" class="about-img"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+
           <div class="about-role-tag">Prosanto K. Barman</div>
         </div>
 
         <div class="about-content reveal">
-          <h2 class="about-heading">Builder at the intersection of<br />hardware &amp; software</h2>
-          <p>I'm a 3rd-year CSE student at <strong>Dhaka University of Engineering &amp; Technology (DUET)</strong>,
-            Gazipur. I chose CSE because it gives me tools to build products that reach the world — and eventually
-            launch a business around them.</p>
-          <p>My work lives where firmware meets with hardware. I build complete systems: sensors, microcontrollers,
-            cloud
-            sync, and Flutter interfaces — the whole stack. As <strong>Software Division Lead of DUET Robotics
+          <h2 class="about-heading">Robotics engineer.<br />AI/ML practitioner.<br />Full-stack builder.</h2>
+          <p>3rd-year CSE student at <strong><a href="https://www.duet.ac.bd/" class="inline-link">DUET,
+                Gazipur</a></strong>. I build complete hardware-software systems — from embedded firmware and sensor
+            integration to mobile apps and cloud backends. As <strong>Software Division Lead of DUET Robotics
               Club</strong>, I lead a team of developers and represent DUET in national competitions.</p>
-          <p>My long-term goal is to engineer intelligent physical products — combining robotics, AI, and embedded
-            hardware — and build a startup around them.</p>
+          <p>Long-term goal: build a robotics and AI startup that engineers intelligent physical products. Competing and
+            building toward that every day.</p>
 
           <div class="about-cards">
             <div class="about-card">
               <div class="about-card-label">University</div>
-              <div class="about-card-value"><a href="https://www.duet.ac.bd/" class="inline-link">Dhaka University of
-                  Engineering & Technology, Gazipur</a><span>B.Sc. in CSE ·
-                  Batch 22 · Since Dec 2023</span></div>
-            </div>
-            <div class="about-card">
-              <div class="about-card-label">GPA</div>
-              <div class="about-card-value">3.31 / 4.00<span>Current standing</span></div>
+              <div class="about-card-value"><a href="https://www.duet.ac.bd/" class="inline-link">DUET,
+                  Gazipur</a><span>B.Sc. CSE · Batch 22 · Since Dec 2023</span></div>
             </div>
             <div class="about-card">
               <div class="about-card-label">Diploma</div>
               <div class="about-card-value"><a href="https://thakurgaon.polytech.gov.bd/" class="inline-link">Thakurgaon
-                  Polytechnic Institute</a><span>CGPA 3.92 · Completed 2022</span>
-              </div>
+                  Polytechnic</a><span>CGPA 3.92 · Completed 2022</span></div>
             </div>
-            <div class="about-card"><!-- about-card-highlight-->
+            <!-- <div class="about-card">
+              <div class="about-card-label">GPA</div>
+              <div class="about-card-value">3.31 / 4.00<span>Current standing</span></div>
+            </div> -->
+            <div class="about-card about-card-highlight">
               <div class="about-card-label">Role</div>
               <div class="about-card-value">Software Lead<span>DUET Robotics Club 25–26</span></div>
             </div>
@@ -261,7 +253,7 @@
 
 
   <!-- ============================================================
-       PROJECTS
+       PROJECTS — Featured first, show more/less, filter buttons
   ============================================================ -->
   <section class="section" id="projects">
     <div class="section-inner">
@@ -271,51 +263,31 @@
 
       <div class="filter-bar reveal">
         <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="featured">⭐ Featured</button>
+        <button class="filter-btn" data-filter="recent">Recent</button>
         <button class="filter-btn" data-filter="Embedded">Embedded</button>
         <button class="filter-btn" data-filter="IoT">IoT</button>
         <button class="filter-btn" data-filter="AI/ML">AI / ML</button>
-        <button class="filter-btn" data-filter="Flutter">Flutter</button>
         <button class="filter-btn" data-filter="Web">Web</button>
       </div>
 
       <div class="projects-grid" id="projects-grid">
 
-        <article class="project-card project-cat-embedded stagger-child" data-categories="Embedded,Robotics"
-          data-project="selfBalancingRobot">
+        <!-- FEATURED: Self-Balancing Robot -->
+        <article class="project-card project-cat-embedded project-featured stagger-child"
+          data-categories="Embedded,Robotics,featured,recent" data-project="selfBalancingRobot">
+          <div class="project-featured-badge">⭐ Featured</div>
           <div class="project-card-top">
             <h3 class="project-title">Self-Balancing Robot</h3>
             <span class="project-status status-done">Completed</span>
           </div>
-          <p class="project-desc">PID-controlled self-balancing robot using MPU6050 IMU and Arduino. Stable balance
-            within ±3° tilt error through real-time sensor fusion.</p>
+          <div class="project-impact">
+            Maintains balance within ±3° · Won 1st place among 40+ teams
+          </div>
+          <p class="project-desc">PID-controlled self-balancing robot using MPU6050 IMU and Arduino. Real-time sensor
+            fusion and motor control.</p>
           <div class="project-pills">
-            <span class="pill">±3° accuracy</span><span class="pill">Real-time PID</span>
-          </div>
-          <div class="project-foot">
-            <div class="project-tech">
-              <span class="tech-tag">Arduino</span><span class="tech-tag">C++</span><span
-                class="tech-tag">MPU6050</span><span class="tech-tag">PID</span>
-            </div>
-            <div class="project-click-hint">
-              <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
-                <path d="M2 12L12 2M5 2h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-              details
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card project-cat-embedded stagger-child" data-categories="Embedded,Robotics"
-          data-project="lineFollowingRobot">
-          <div class="project-card-top">
-            <h3 class="project-title">Line Following Robot</h3>
-            <span class="project-status status-done">Completed</span>
-          </div>
-          <p class="project-desc">A Line Follower Robot able to follow any line with the help of IR sensors, and also
-            able to take dicision that which direction should follow.</p>
-          <div class="project-pills">
-            <span class="pill">Real-time PID</span><span class="pill">LFR
+            <span class="pill">±3° accuracy</span><span class="pill">Real-time PID</span><span class="pill">LFR
               Champion</span>
           </div>
           <div class="project-foot">
@@ -333,7 +305,35 @@
           </div>
         </article>
 
-        <article class="project-card project-cat-embedded stagger-child" data-categories="Embedded,IoT"
+        <!-- Line Following Robot -->
+        <article class="project-card project-cat-embedded stagger-child"
+          data-categories="Embedded,Robotics,featured,recent" data-project="lineFollowingRobot">
+          <div class="project-card-top">
+            <h3 class="project-title">Line Following Robot</h3>
+            <span class="project-status status-done">Completed</span>
+          </div>
+          <p class="project-desc">Autonomous robot that detects and follows a predetermined path using IR sensors and
+            PID control. Won 1st place at DUET Techfest 2025.</p>
+          <div class="project-pills">
+            <span class="pill">Real-time PID</span><span class="pill">LFR Champion</span>
+          </div>
+          <div class="project-foot">
+            <div class="project-tech">
+              <span class="tech-tag">Arduino</span><span class="tech-tag">C++</span><span class="tech-tag">IR
+                Sensors</span><span class="tech-tag">PID</span>
+            </div>
+            <div class="project-click-hint">
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                <path d="M2 12L12 2M5 2h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              details
+            </div>
+          </div>
+        </article>
+
+        <!-- Automatic Solar Tracker -->
+        <article class="project-card project-cat-embedded stagger-child" data-categories="Embedded,IoT,recent"
           data-project="automaticSolarTracking">
           <div class="project-card-top">
             <h3 class="project-title">Automatic Solar Tracker</h3>
@@ -360,7 +360,9 @@
           </div>
         </article>
 
-        <article class="project-card project-cat-ml stagger-child" data-categories="AI/ML" data-project="sentiment">
+        <!-- Twitter Sentiment Analysis — hidden by default, shown via "more" -->
+        <article class="project-card project-cat-ml stagger-child project-extra" data-categories="AI/ML"
+          data-project="sentiment">
           <div class="project-card-top">
             <h3 class="project-title">Twitter Sentiment Analysis</h3>
             <span class="project-status status-done">Completed</span>
@@ -386,7 +388,9 @@
           </div>
         </article>
 
-        <article class="project-card project-cat-web stagger-child" data-categories="Web" data-project="ecommerce">
+        <!-- Robotics E-Commerce — hidden by default -->
+        <article class="project-card project-cat-web stagger-child project-extra" data-categories="Web"
+          data-project="ecommerce">
           <div class="project-card-top">
             <h3 class="project-title">Robotics E-Commerce Platform</h3>
             <span class="project-status status-done">Completed</span>
@@ -413,6 +417,17 @@
         </article>
 
       </div>
+
+      <!-- Show more / show less -->
+      <div class="projects-more-wrap reveal">
+        <button class="projects-more-btn" id="projects-more-btn">
+          Show more projects
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -431,13 +446,28 @@
 
 
   <!-- ============================================================
-       SKILLS
+       SKILLS — AI/ML first, then Embedded, then Web
   ============================================================ -->
   <section class="section section-alt" id="skills">
     <div class="section-inner">
       <div class="section-label reveal">technical skills</div>
       <h2 class="section-title reveal">What I work with</h2>
       <div class="skills-grid">
+
+        <div class="skill-group reveal stagger-child">
+          <div class="skill-group-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
+            </svg>
+          </div>
+          <div class="skill-group-title">AI / ML</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span><span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">pandas</span><span class="skill-tag">numpy</span><span class="skill-tag">NLP</span>
+          </div>
+        </div>
+
         <div class="skill-group reveal stagger-child">
           <div class="skill-group-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -452,6 +482,7 @@
             <span class="skill-tag">PID Control</span><span class="skill-tag">Firebase</span>
           </div>
         </div>
+
         <div class="skill-group reveal stagger-child">
           <div class="skill-group-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -465,19 +496,7 @@
             <span class="skill-tag">Firebase</span><span class="skill-tag">REST APIs</span>
           </div>
         </div>
-        <div class="skill-group reveal stagger-child">
-          <div class="skill-group-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path
-                d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
-            </svg>
-          </div>
-          <div class="skill-group-title">AI / ML</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span><span class="skill-tag">scikit-learn</span>
-            <span class="skill-tag">pandas</span><span class="skill-tag">numpy</span><span class="skill-tag">NLP</span>
-          </div>
-        </div>
+
         <div class="skill-group reveal stagger-child">
           <div class="skill-group-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -492,6 +511,7 @@
             <span class="skill-tag">PHP</span><span class="skill-tag">MySQL</span>
           </div>
         </div>
+
         <div class="skill-group reveal stagger-child">
           <div class="skill-group-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -502,10 +522,11 @@
           <div class="skill-group-title">Competitive Programming</div>
           <div class="skill-tags">
             <span class="skill-tag">Codeforces</span><span class="skill-tag">CodeChef</span>
-            <span class="skill-tag">LeetCode</span><span class="skill-tag">287 CF solved</span><span
-              class="skill-tag">276 CC solved</span>
+            <span class="skill-tag">LeetCode</span><span class="skill-tag">285+ CF</span><span class="skill-tag">270+
+              CC</span>
           </div>
         </div>
+
         <div class="skill-group reveal stagger-child">
           <div class="skill-group-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -521,18 +542,20 @@
               class="skill-tag">Proteus</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
 
   <!-- ============================================================
-       ACHIEVEMENTS — with "See photo" buttons
+       ACHIEVEMENTS & CERTIFICATIONS — merged, anchor removed
   ============================================================ -->
   <section class="section" id="achievements">
     <div class="section-inner">
-      <div class="section-label reveal">achievements &amp; recognition</div>
+      <div class="section-label reveal">achievements &amp; certifications</div>
       <h2 class="section-title reveal">Beyond the classroom</h2>
+
       <div class="achievements-grid">
 
         <div class="achievement-card achievement-champion reveal stagger-child">
@@ -540,8 +563,8 @@
           <h3 class="achievement-title">Champion — Line Follower Robot</h3>
           <div class="achievement-org">DUET Techfest 2025</div>
           <p class="achievement-desc">1st place among 40+ teams from universities across Bangladesh. BDT 20,000 prize.
-            Built and programmed the entire robot from hardware to firmware.</p>
-          <span class="achievement-badge">BDT 20,000 · 40+ teams</span>
+            Designed, built, and programmed the entire robot.</p>
+          <span class="achievement-badge">BDT 20,000 · 40+ teams · 1st place</span>
           <button class="see-photo-btn" data-img="assets/images/champion.jpg"
             data-caption="Champion · DUET Techfest 2025">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -557,8 +580,8 @@
           <div class="achievement-icon">🤖</div>
           <h3 class="achievement-title">BUET Robo Carnival Participant</h3>
           <div class="achievement-org">Bangladesh University of Engineering &amp; Technology</div>
-          <p class="achievement-desc">Competed at Bangladesh's top engineering university, representing DUET Robotics
-            Club in the inter-university robotics competition.</p>
+          <p class="achievement-desc">Competed at Bangladesh's top engineering university among 50+ teams, representing
+            DUET Robotics Club.</p>
           <span class="achievement-badge">50+ teams</span>
           <button class="see-photo-btn" data-img="assets/images/team-photo.jpg"
             data-caption="BUET Robo Carnival — team representing DUET">
@@ -572,30 +595,13 @@
         </div>
 
         <div class="achievement-card reveal stagger-child">
-          <div class="achievement-icon">🎤</div>
-          <h3 class="achievement-title">National Event Anchor</h3>
-          <div class="achievement-org">DUET Techfest 2025 &amp; University Programs</div>
-          <p class="achievement-desc">Anchored national-level programs at the DUET auditorium. Strong public speaker and
-            host for major campus events.</p>
-          <button class="see-photo-btn" data-img="assets/images/anchoring.jpg"
-            data-caption="Anchoring at DUET Auditorium">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" stroke="none" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>
-            See photo
-          </button>
-        </div>
-
-        <div class="achievement-card reveal stagger-child">
           <div class="achievement-icon">⚙️</div>
           <h3 class="achievement-title">Software Division Lead</h3>
           <div class="achievement-org">DUET Robotics Club — Executive Committee 25–26</div>
-          <p class="achievement-desc">Leads a team of 3–4 developers. Mentors juniors in programming and hardware
-            integration. Coordinates competition-level projects.</p>
+          <p class="achievement-desc">Leads a team of 3–4 developers. Mentors juniors in embedded programming and
+            hardware integration. Coordinates national competition projects.</p>
           <button class="see-photo-btn" data-img="assets/images/Software-lead.jpg"
-            data-caption="Leading the team — pre-competition debugging">
+            data-caption="Software Lead · DUET Robotics Club">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="3" y="3" width="18" height="18" rx="2" />
               <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" stroke="none" />
@@ -624,7 +630,6 @@
 
         <div class="achievement-card reveal stagger-child">
           <div class="achievement-icon">
-            <!-- Code/terminal icon — fits competitive programming perfectly -->
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <polyline points="16 18 22 12 16 6" />
               <polyline points="8 6 2 12 8 18" />
@@ -632,8 +637,8 @@
           </div>
           <h3 class="achievement-title">Competitive Programmer</h3>
           <div class="achievement-org">Codeforces · CodeChef · LeetCode</div>
-          <p class="achievement-desc">280+ problems solved on Codeforces, 270+ on CodeChef. 91-day max streak.</p>
-
+          <p class="achievement-desc">285+ problems on Codeforces, 270+ on CodeChef. Country rank #2050 in Bangladesh.
+            91-day max streak.</p>
           <a href="https://codeforces.com/profile/Prosantokb" target="_blank" rel="noopener" class="see-photo-btn">
             <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
               <path d="M2 12L12 2M5 2h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -641,7 +646,6 @@
             </svg>
             Codeforces
           </a>
-
           <a href="https://www.codechef.com/users/prosanto_kumar" target="_blank" rel="noopener" class="see-photo-btn">
             <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
               <path d="M2 12L12 2M5 2h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -651,71 +655,22 @@
           </a>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       CERTIFICATES
-  ============================================================ -->
-  <section class="section section-alt" id="certificates">
-    <div class="section-inner">
-      <div class="section-label reveal">credentials</div>
-      <h2 class="section-title reveal">Certificates &amp; recognition</h2>
-      <div class="certs-grid">
-
-        <div class="cert-card reveal stagger-child">
-          <div class="cert-img-wrap">
-            <img src="assets/images/cert-ailab.png" alt="AI CodeLab Certificate" class="cert-clickable"
-              data-img="assets/images/cert-ailab.png"
-              data-caption="AI CodeLab Program 2026 · DUET Computer Society + Learn With Sumit"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-            <div class="cert-img-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <path d="M21 15l-5-5L5 21" />
-              </svg>
-              Save as cert-ailab.png
-            </div>
-          </div>
-          <div class="cert-body">
-            <div class="cert-issuer">DUET Computer Society + Learn With Sumit</div>
-            <h3 class="cert-title">AI CodeLab Program 2026</h3>
-            <p class="cert-desc">Modern AI concepts, agentic AI systems, and real-world AI solution design.</p>
-            <div class="cert-meta">
-              <span class="cert-date">2026</span>
-              <span class="cert-badge">Certificate of Appreciation</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cert-card reveal stagger-child">
-          <div class="cert-img-wrap">
-            <img src="assets/images/cert-iupc.png" alt="DUET IUPC 2025 Certificate" class="cert-clickable"
-              data-img="assets/images/cert-iupc.png"
-              data-caption="Volunteer Certificate · DUET IUPC 2025 · May 9–10, 2025"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-            <div class="cert-img-placeholder">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <path d="M21 15l-5-5L5 21" />
-              </svg>
-              Save as cert-iupc.png
-            </div>
-          </div>
-          <div class="cert-body">
-            <div class="cert-issuer">DUET Computer Society</div>
-            <h3 class="cert-title">Volunteer — DUET IUPC 2025</h3>
-            <p class="cert-desc">Contribution as a volunteer at the DUET Inter University Programming Contest, 9–10 May
-              2025.</p>
-            <div class="cert-meta">
-              <span class="cert-date">May 2025</span>
-              <span class="cert-badge">Volunteer Certificate</span>
-            </div>
-          </div>
+        <!-- Certificates merged in -->
+        <div class="achievement-card reveal stagger-child">
+          <div class="achievement-icon">🎓</div>
+          <h3 class="achievement-title">AI CodeLab Program 2026</h3>
+          <div class="achievement-org">DUET Computer Society + Learn With Sumit</div>
+          <p class="achievement-desc">Modern AI concepts, agentic AI systems, and real-world AI solution design.</p>
+          <span class="achievement-badge">Certificate of Appreciation · 2026</span>
+          <button class="see-photo-btn" data-img="assets/images/cert-ailab.png"
+            data-caption="AI CodeLab Program 2026 · DUET Computer Society">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" stroke="none" />
+              <path d="M21 15l-5-5L5 21" />
+            </svg>
+            See certificate
+          </button>
         </div>
 
       </div>
@@ -724,134 +679,7 @@
 
 
   <!-- ============================================================
-       GALLERY — click to open, arrows to navigate
-  ============================================================ -->
-  <section class="section" id="gallery">
-    <div class="section-inner">
-      <div class="section-label reveal">gallery</div>
-      <h2 class="section-title reveal">Moments &amp; memories</h2>
-      <p class="section-sub reveal">Click any photo · use arrows or keyboard ← → to navigate</p>
-
-      <div class="gallery-grid" id="gallery-grid">
-
-        <div class="gallery-item reveal stagger-child" data-gallery-index="0">
-          <img src="assets/images/with-proVC.jpg"
-            alt="DRC executive members with Pro-Vice-Chancellor(Dr. Md. Arefin Kowser) sir"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-          <div class="gallery-placeholder"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>with-proVC.jpg</div>
-          <div class="gallery-caption">DRC executive members with Pro-Vice-Chancellor(Dr. Md. Arefin Kowser) sir - 2025
-          </div>
-        </div>
-
-        <div class="gallery-item reveal stagger-child" data-gallery-index="1">
-          <img src="assets/images/gazupur-cantonment.jpg" alt="At Gazipur Cantonment Public School & College(2025)"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-          <div class="gallery-placeholder"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>gazupur-cantonment.jpg</div>
-          <div class="gallery-caption">At Gazipur Cantonment Public School & College(2025)</div>
-        </div>
-
-        <div class="gallery-item reveal stagger-child" data-gallery-index="2">
-          <img src="assets/images/daffodil-prize-giving.jpg"
-            alt="Prize giving ceremony at Daffodil Robo-Tech Olympiad 2024"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-          <div class="gallery-placeholder"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>daffodil-prize-giving.jpg</div>
-          <div class="gallery-caption">Prize giving ceremony at Daffodil Robo-Tech Olympiad 2024</div>
-        </div>
-
-        <div class="gallery-item reveal stagger-child" data-gallery-index="3">
-          <img src="assets/images/champion.jpg" alt="LFR Champion DUET Techfest 2025"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-          <div class="gallery-placeholder"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>champion.jpg</div>
-          <div class="gallery-caption">Champion · DUET Techfest 2025</div>
-        </div>
-
-        <div class="gallery-item reveal stagger-child" data-gallery-index="4">
-          <img src="assets/images/anchoring.jpg" alt="Anchoring at DUET"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-          <div class="gallery-placeholder"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>anchoring.jpg</div>
-          <div class="gallery-caption">Anchoring · DUET Auditorium</div>
-        </div>
-
-        <div class="gallery-item reveal stagger-child" data-gallery-index="5">
-          <img src="assets/images/buet-carnival.jpg" alt="BUET Robo Carnival"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-          <div class="gallery-placeholder"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>buet-carnival.jpg</div>
-          <div class="gallery-caption">BUET Robo Carnival</div>
-        </div>
-
-        <div class="gallery-item reveal stagger-child" data-gallery-index="6">
-          <img src="assets/images/robot-solo.jpg" alt="With the LFR Robot"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-          <div class="gallery-placeholder"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>robot-solo.jpg</div>
-          <div class="gallery-caption">With the LFR Robot · Competition</div>
-        </div>
-
-        <div class="gallery-item reveal stagger-child" data-gallery-index="7">
-          <img src="assets/images/team-debug.jpg" alt="Team debugging"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-          <div class="gallery-placeholder"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>team-debug.jpg</div>
-          <div class="gallery-caption">Team debugging · Pre-competition</div>
-        </div>
-
-        <div class="gallery-item reveal stagger-child" data-gallery-index="8">
-          <img src="assets/images/team-photo.jpg" alt="Team photo"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-          <div class="gallery-placeholder"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>team-photo.jpg</div>
-          <div class="gallery-caption">Team · DUET Robotics Club</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       CONTACT — with CodeChef added
+       CONTACT
   ============================================================ -->
   <section class="section section-alt" id="contact">
     <div class="section-inner contact-inner">
@@ -924,7 +752,6 @@
           </span>
         </a>
 
-        <!-- NEW: CodeChef -->
         <a href="https://www.codechef.com/users/prosanto_kumar" target="_blank" rel="noopener" class="contact-link">
           <span class="contact-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -957,16 +784,160 @@
 
 
   <!-- ============================================================
-       FOOTER
+       INTERESTS — small section, not in navbar
+  ============================================================ -->
+  <section class="section interests-section" id="interests">
+    <div class="section-inner">
+      <div class="section-label reveal">interests</div>
+      <h2 class="section-title reveal" style="font-size:clamp(1.4rem,3vw,2rem)">What I read &amp; follow</h2>
+
+      <div class="interests-grid reveal">
+
+        <!-- Books -->
+        <div class="interests-col">
+          <div class="interests-col-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+            </svg>
+            Books
+          </div>
+          <div class="book-filter-bar">
+            <button class="book-filter-btn active" data-book-filter="all">All</button>
+            <button class="book-filter-btn" data-book-filter="Startup">Startup</button>
+            <button class="book-filter-btn" data-book-filter="Mindset">Mindset</button>
+            <button class="book-filter-btn" data-book-filter="Leadership">Leadership</button>
+          </div>
+          <div class="books-grid" id="books-grid">
+
+            <div class="book-card" data-book-cat="Startup">
+              <div class="book-cover">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+                </svg>
+              </div>
+              <div class="book-info">
+                <div class="book-title">The $100 Startup</div>
+                <div class="book-author">Chris Guillebeau</div>
+                <div class="book-note">A business can start lean — idea, execution, first customer.</div>
+                <span class="book-tag">Startup</span>
+              </div>
+            </div>
+
+            <div class="book-card" data-book-cat="Mindset">
+              <div class="book-cover">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+                </svg>
+              </div>
+              <div class="book-info">
+                <div class="book-title">Rich Dad Poor Dad</div>
+                <div class="book-author">Robert Kiyosaki</div>
+                <div class="book-note">Changed how I think about assets, money, and building for the long term.</div>
+                <span class="book-tag">Mindset</span>
+              </div>
+            </div>
+
+            <div class="book-card" data-book-cat="Leadership">
+              <div class="book-cover">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+                </svg>
+              </div>
+              <div class="book-info">
+                <div class="book-title">Leaders Eat Last</div>
+                <div class="book-author">Simon Sinek</div>
+                <div class="book-note">Real leadership is about protecting the people around you, not rank.</div>
+                <span class="book-tag">Leadership</span>
+              </div>
+            </div>
+
+            <div class="book-card" data-book-cat="Mindset">
+              <div class="book-cover">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+                </svg>
+              </div>
+              <div class="book-info">
+                <div class="book-title">How to Win Friends &amp; Influence People</div>
+                <div class="book-author">Dale Carnegie</div>
+                <div class="book-note">The foundation of every professional relationship I build.</div>
+                <span class="book-tag">Mindset</span>
+              </div>
+            </div>
+
+            <div class="book-card" data-book-cat="Mindset">
+              <div class="book-cover">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+                </svg>
+              </div>
+              <div class="book-info">
+                <div class="book-title">How to Talk to Anyone</div>
+                <div class="book-author">Leil Lowndes</div>
+                <div class="book-note">Practical communication techniques that actually work in real situations.</div>
+                <span class="book-tag">Mindset</span>
+              </div>
+            </div>
+
+            <div class="book-card" data-book-cat="Mindset">
+              <div class="book-cover">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+                </svg>
+              </div>
+              <div class="book-info">
+                <div class="book-title">The Alchemist</div>
+                <div class="book-author">Paulo Coelho</div>
+                <div class="book-note">Every person who pursues their dream transforms the world a little.</div>
+                <span class="book-tag">Mindset</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Also interested in -->
+        <div class="interests-col interests-also">
+          <div class="interests-col-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 16v-4M12 8h.01" />
+            </svg>
+            Also interested in
+          </div>
+          <div class="interest-tags">
+            <span class="interest-tag">AI &amp; robotics research</span>
+            <span class="interest-tag">Global tech news</span>
+            <span class="interest-tag">Startup ecosystems</span>
+            <span class="interest-tag">Open source hardware</span>
+            <span class="interest-tag">Space &amp; engineering</span>
+            <span class="interest-tag">Technology policy</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER — GPA removed
   ============================================================ -->
   <footer class="footer">
     <span>Prosanto K. Barman &copy; <span id="year"></span></span>
     <span class="footer-stats">
-      <span>CF: 280+ solved</span>
+      <span>CF: 285+ solved</span>
       <span class="footer-dot"></span>
-      <span>CC: 270+ solved (#2050 BD)</span>
+      <span>CC: #2050 BD</span>
       <span class="footer-dot"></span>
-      <span>GPA: 3.31</span>
+      <span>LFR Champion 2025</span>
     </span>
     <span>
       <a href="https://github.com/prosantokb" target="_blank" rel="noopener">GitHub</a>
@@ -986,46 +957,32 @@
   <!-- Toast -->
   <div class="toast" id="toast">Email copied!</div>
 
-  <!-- ============================================================
-       LIGHTBOX — used by achievements "See photo", certificates,
-       AND gallery navigation
-  ============================================================ -->
+  <!-- Lightbox -->
   <div class="lightbox" id="lightbox" aria-hidden="true">
     <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
     <div class="lightbox-inner">
-
-      <!-- Close -->
       <button class="lightbox-close" id="lightbox-close" aria-label="Close photo">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
         </svg>
       </button>
-
-      <!-- Prev arrow (only shown in gallery mode) -->
-      <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous photo">
+      <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
           <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
       </button>
-
-      <!-- Image -->
       <img class="lightbox-img" id="lightbox-img" src="" alt="" />
-
-      <!-- Next arrow (only shown in gallery mode) -->
-      <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next photo">
+      <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
           <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
       </button>
-
-      <!-- Caption + counter -->
       <div class="lightbox-footer">
         <div class="lightbox-caption" id="lightbox-caption"></div>
         <div class="lightbox-counter" id="lightbox-counter"></div>
       </div>
-
     </div>
   </div>
 
